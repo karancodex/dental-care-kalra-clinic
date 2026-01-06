@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Jasneet Singh Kalra - Advanced Dental Care in South Delhi</title>
+  <meta name="description"
+    content="Advanced Dental Care in South Delhi   Implants, Invisalign, Veneers, Full Mouth Rehab led by Dr. Jasneet Singh Kalra." />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('YOUR_PUBLIC_KEY');
+    })();
+  </script>
+</head>
+
+<body class="font-sans text-dark bg-light antialiased">
+
+  <!-- Sticky Top Bar -->
+  <div class="fixed top-0 left-0 w-full z-50 bg-primary text-white text-[11px] py-2 shadow-sm hidden md:block">
+    <div class="container-custom flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <a href="tel:+919717155497"
+          class="flex items-center hover:text-secondary-light transition-colors uppercase font-bold tracking-wide">
+          <i data-lucide="phone" class="w-3.5 h-3.5 mr-2"></i> +91 97171 55497 / +91 84324 39491
+        </a>
+        <a href="https://wa.me/918432439491"
+          class="flex items-center hover:text-secondary-light transition-colors uppercase font-bold tracking-wide">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 mr-2"></i> WhatsApp
+        </a>
+        <a href="https://share.google/lZV4yWX9KJNhizbjH" target="_blank"
+          class="flex items-center hover:text-secondary-light transition-colors uppercase font-bold tracking-wide">
+          <i data-lucide="map" class="w-3.5 h-3.5 mr-2"></i> Get Directions
+        </a>
+      </div>
+      <div class="flex items-center space-x-6 tracking-wide">
+        <span class="flex items-center font-semibold text-white/80">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 mr-2"></i> C-43, Jangpura Extension, Delhi
+        </span>
+        <span class="flex items-center font-semibold text-white/80">
+          <i data-lucide="clock" class="w-3.5 h-3.5 mr-2"></i> Mon–Sat: 10:30 AM – 7:30 PM | Sun Closed
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header
+    class="sticky top-0 md:top-9 left-0 w-full z-40 bg-white/95 backdrop-blur-md shadow-xl transition-all duration-300"
+    id="main-header">
+    <div class="container-custom flex justify-between items-center h-20 md:h-24">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="flex flex-col">
+          <img src="/clinic_logo.jpg" alt="Dr. Kalra's Clinic" class="h-10 md:h-12 w-auto object-contain">
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+        <a href="#home"
+          class="text-[13px] font-bold text-gray-800 hover:text-primary transition-colors uppercase tracking-wider">Home</a>
+        <a href="#about"
+          class="text-[13px] font-bold text-gray-800 hover:text-primary transition-colors uppercase tracking-wider">About
+          Us</a>
+        <a href="#why-choose"
+          class="text-[13px] font-bold text-gray-800 hover:text-primary transition-colors uppercase tracking-wider">Why
+          Choose Us</a>
+        <a href="#services"
+          class="text-[13px] font-bold text-gray-800 hover:text-primary transition-colors uppercase tracking-wider">Our
+          Services</a>
+        <a href="#offer"
+          class="text-[13px] font-bold text-gray-800 hover:text-primary transition-colors uppercase tracking-wider">Offer</a>
+        <a href="#faqs"
+          class="text-[13px] font-bold text-gray-800 hover:text-primary transition-colors uppercase tracking-wider">FAQs</a>
+        <a href="#testimonials"
+          class="text-[13px] font-bold text-gray-800 hover:text-primary transition-colors uppercase tracking-wider">Testimonials</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="flex items-center space-x-4">
+        <button
+          class="hidden sm:inline-flex btn bg-secondary text-dark px-6 py-2.5 text-[11px] uppercase tracking-widest hover:bg-secondary-dark ring-4 ring-secondary/10 transition-all font-black modal-trigger">Schedule
+          a Visit</button>
+        <button class="lg:hidden text-primary p-2" id="mobile-menu-btn">
+          <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      class="hidden lg:hidden bg-white border-t border-gray-100 shadow-2xl overflow-hidden transition-all duration-500"
+      id="mobile-menu">
+      <div class="px-6 py-8 space-y-6">
+        <a href="#home" class="block text-lg font-bold text-gray-800 hover:text-primary">Home</a>
+        <a href="#about" class="block text-lg font-bold text-gray-800 hover:text-primary">About Us</a>
+        <a href="#why-choose" class="block text-lg font-bold text-gray-800 hover:text-primary">Why Choose Us</a>
+        <a href="#services" class="block text-lg font-bold text-gray-800 hover:text-primary">Our Services</a>
+        <a href="#offer" class="block text-lg font-bold text-gray-800 hover:text-primary">Offer</a>
+        <a href="#faqs" class="block text-lg font-bold text-gray-800 hover:text-primary">FAQs</a>
+        <a href="#testimonials" class="block text-lg font-bold text-gray-800 hover:text-primary">Testimonials</a>
+        <div class="pt-6 border-t border-gray-100 flex gap-4">
+          <button class="flex-1 btn btn-primary py-4 text-sm font-black uppercase tracking-widest modal-trigger">Book
+            Appointment</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center bg-dark overflow-hidden" id="home">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img src="/hero_bg_new.png" alt="Dental Clinic" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-primary/60 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
+      </div>
+
+      <div class="container-custom relative z-10 py-20 md:py-32">
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+
+          <!-- Hero Content (Left) -->
+          <div class="lg:col-span-7 reveal">
+            <div
+              class="inline-block px-5 py-2 bg-secondary text-dark text-xs font-black tracking-widest uppercase rounded-sm mb-6 shadow-xl">
+              South Delhi's #1 Dental Hospital
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-white leading-[1.1] mb-6">
+              Advanced Dental Care in South Delhi <br><span
+                class="text-xl md:text-2xl lg:text-3xl text-secondary italic">Implants | Invisalign |
+                Veneers | Full Mouth Rehab</span>
+            </h1>
+            <p class="text-lg text-white/90 max-w-2xl leading-relaxed mb-8 font-medium">
+              Led by <span class="text-secondary font-extrabold">Dr. Jasneet Singh Kalra</span>. BDS, MDS
+              [Prosthodontics] specialist-led planning, premium materials, and a comfort-focused experience.
+            </p>
+
+            <!-- USP Bullets -->
+            <ul class="space-y-3 mb-10">
+              <li class="flex items-center text-white/90 font-bold text-sm">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mr-3"></i> Fixed teeth solutions in 24
+                hours (single tooth to full arch)
+              </li>
+              <li class="flex items-center text-white/90 font-bold text-sm">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mr-3"></i> Digital diagnosis (intra-oral
+                scan + bite analysis)
+              </li>
+              <li class="flex items-center text-white/90 font-bold text-sm">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mr-3"></i> Premium crowns & prosthesis
+                focus
+              </li>
+              <li class="flex items-center text-white/90 font-bold text-sm">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mr-3"></i> Strict sterilisation protocols
+              </li>
+              <li class="flex items-center text-white/90 font-bold text-sm">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-secondary mr-3"></i> Transparent pricing & EMI
+                options available
+              </li>
+            </ul>
+
+            <button
+              class="modal-trigger btn bg-white text-primary px-10 py-4 text-sm uppercase font-black tracking-widest hover:bg-gray-100 transition-all shadow-2xl">
+              Talk With Our Expert
+            </button>
+          </div>
+
+          <!-- Hero Lead Form (Right) -->
+          <div class="lg:col-span-5 reveal-delay-2 reveal" id="book">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-[0_30px_100px_rgba(0,0,0,0.5)] relative">
+              <div
+                class="absolute -top-5 left-1/2 -translate-x-1/2 bg-secondary text-dark px-6 py-2 rounded-full font-black text-[10px] tracking-widest uppercase shadow-xl ring-4 ring-white">
+                Book Your Consultation
+              </div>
+              <p class="text-xs text-center font-bold text-gray-400 mt-4 mb-6">Share your details our coordinator will
+                confirm your slot.</p>
+
+              <form class="space-y-3" id="hero-form">
+                <input type="text" placeholder="Full Name*" required
+                  class="w-full px-4 py-3 rounded-xl border-2 border-gray-50 bg-gray-50 focus:border-primary focus:bg-white transition-all outline-none font-bold text-sm placeholder:text-gray-400"
+                  name="name">
+                <input type="tel" placeholder="Phone Number*" required
+                  class="w-full px-4 py-3 rounded-xl border-2 border-gray-50 bg-gray-50 focus:border-primary focus:bg-white transition-all outline-none font-bold text-sm placeholder:text-gray-400"
+                  name="phone">
+                <input type="email" placeholder="Email Address*" required
+                  class="w-full px-4 py-3 rounded-xl border-2 border-gray-50 bg-gray-50 focus:border-primary focus:bg-white transition-all outline-none font-bold text-sm placeholder:text-gray-400"
+                  name="email">
+
+                <select required name="service"
+                  class="w-full px-4 py-3 rounded-xl border-2 border-gray-50 bg-gray-50 focus:border-primary focus:bg-white transition-all outline-none font-bold text-gray-500 text-sm appearance-none">
+                  <option value="" disabled selected>Service Needed*</option>
+                  <option value="Implants">Implants</option>
+                  <option value="Invisalign">Invisalign</option>
+                  <option value="Veneers">Veneers</option>
+                  <option value="Rehabilitation">Full Mouth Rehabilitation</option>
+                  <option value="Cleaning">Teeth Cleaning (₹699 Offer)</option>
+                  <option value="RCT">Root Canal Treatment</option>
+                  <option value="Gum Treatment">Gum Treatment / Gum Surgery</option>
+                  <option value="Other">Other</option>
+                </select>
+
+                <input type="text" placeholder="Area / PIN Code"
+                  class="w-full px-4 py-3 rounded-xl border-2 border-gray-50 bg-gray-50 focus:border-primary focus:bg-white transition-all outline-none font-bold text-sm placeholder:text-gray-400"
+                  name="area_pin">
+
+                <div class="flex items-start space-x-2 pt-1">
+                  <input type="checkbox" required id="consent" name="consent"
+                    class="mt-1 w-4 h-4 text-secondary rounded focus:ring-secondary">
+                  <label for="consent" class="text-[10px] text-gray-400 leading-tight">By submitting, you agree to
+                    receive a call/WhatsApp regarding appointment confirmation.</label>
+                </div>
+
+                <button type="submit"
+                  class="btn btn-primary w-full py-4 text-xs uppercase tracking-widest font-black shadow-xl hover:scale-[1.02] active:scale-95 transition-all mt-2">Book
+                  My Slot</button>
+                <div
+                  class="mt-3 flex items-center justify-center gap-1.5 opacity-60 hover:opacity-100 transition-opacity">
+                  <i data-lucide="shield-check" class="w-3 h-3 text-secondary"></i>
+                  <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Protected by
+                    reCAPTCHA</span>
+                </div>
+              </form>
+
+              <!-- Success Message (Hidden) -->
+              <div id="form-success"
+                class="hidden absolute inset-0 bg-white rounded-3xl z-20 flex flex-col items-center justify-center p-8 text-center animate-fade-in">
+                <div
+                  class="w-20 h-20 bg-green-500 text-white rounded-full flex items-center justify-center text-4xl mb-6 shadow-xl animate-bounce">
+                  ✓</div>
+                <h3 class="text-2xl font-black text-primary mb-3">Thank you!</h3>
+                <p class="text-gray-500 font-bold text-sm">Our team will call/WhatsApp you shortly to confirm your slot.
+                </p>
+                <button onclick="document.getElementById('form-success').classList.add('hidden')"
+                  class="mt-6 text-secondary font-black text-[10px] uppercase tracking-widest underline decoration-2 underline-offset-4">New
+                  Enquiry</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    </div>
+    </div>
+    </section>
+
+    <!-- Trust Counters (Stats Row) -->
+    <section class="py-20 bg-gray-50 border-b border-gray-100" id="counters">
+      <div class="container-custom">
+        <h2 class="text-3xl md:text-4xl font-display font-black text-primary text-center mb-16 reveal">Trusted Dental
+          Care in South Delhi</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 reveal text-center">
+          <!-- Item 1 -->
+          <div
+            class="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:border-secondary hover:shadow-2xl transition-all group">
+            <div
+              class="w-12 h-12 bg-primary/5 text-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <div class="text-2xl font-black text-primary mb-1">12+</div>
+            <div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Years Clinic Legacy
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:border-secondary hover:shadow-2xl transition-all group">
+            <div
+              class="w-12 h-12 bg-primary/5 text-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="smile" class="w-6 h-6"></i>
+            </div>
+            <div class="text-2xl font-black text-primary mb-1">20k+</div>
+            <div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Happy Smiles
+              Delivered</div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:border-secondary hover:shadow-2xl transition-all group">
+            <div
+              class="w-12 h-12 bg-primary/5 text-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="anchor" class="w-6 h-6"></i>
+            </div>
+            <div class="text-2xl font-black text-primary mb-1">10k+</div>
+            <div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Dental Implants Done
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div
+            class="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:border-secondary hover:shadow-2xl transition-all group">
+            <div
+              class="w-12 h-12 bg-primary/5 text-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <div class="text-2xl font-black text-primary mb-1">5k+</div>
+            <div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Veneers Cases</div>
+          </div>
+          <!-- Item 5 -->
+          <div
+            class="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:border-secondary hover:shadow-2xl transition-all group">
+            <div
+              class="w-12 h-12 bg-primary/5 text-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="refresh-ccw" class="w-6 h-6"></i>
+            </div>
+            <div class="text-2xl font-black text-primary mb-1">1k+</div>
+            <div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Full Mouth Rehabs
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div
+            class="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:border-secondary hover:shadow-2xl transition-all group">
+            <div
+              class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-500 group-hover:text-white transition-colors">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center justify-center h-8">
+              <span class="text-xs font-black text-primary">Safety-First</span>
+            </div>
+            <div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Sterilisation
+              Protocols</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-white" id="why-choose">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+          <h2 class="text-4xl md:text-5xl font-display font-black text-primary mb-6">Why Patients Choose <br><span
+              class="text-secondary italic">Dr. Jasneet Singh Kalra</span></h2>
+          <div class="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-500 font-semibold leading-relaxed">Dr. Kalra’s Dental Clinic in New Delhi is your trusted
+            destination for complete, compassionate, and advanced dental care.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <!-- Tile 1 -->
+          <div
+            class="p-8 rounded-[2.5rem] border-2 border-gray-50 hover:border-primary/10 hover:shadow-2xl transition-all group reveal">
+            <div
+              class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+              <i data-lucide="award" class="w-7 h-7"></i>
+            </div>
+            <h4 class="text-xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">Prosthodontist-Led
+              Planning</h4>
+            <p class="text-gray-400 font-medium text-sm leading-relaxed">Full-mouth dental implants, bite, and
+              prosthesis planning are done with a specialist approach.</p>
+          </div>
+
+          <!-- Tile 2 -->
+          <div
+            class="p-8 rounded-[2.5rem] border-2 border-gray-50 hover:border-primary/10 hover:shadow-2xl transition-all group reveal reveal-delay-1">
+            <div
+              class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+              <i data-lucide="scan" class="w-7 h-7"></i>
+            </div>
+            <h4 class="text-xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">Digital Scan-Based
+              Diagnosis</h4>
+            <p class="text-gray-400 font-medium text-sm leading-relaxed">See your teeth, bite pressure points, and
+              options clearly before you decide.</p>
+          </div>
+
+          <!-- Tile 3 -->
+          <div
+            class="p-8 rounded-[2.5rem] border-2 border-gray-50 hover:border-primary/10 hover:shadow-2xl transition-all group reveal reveal-delay-2">
+            <div
+              class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+              <i data-lucide="gem" class="w-7 h-7"></i>
+            </div>
+            <h4 class="text-xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">Premium Prosthesis
+              Focus</h4>
+            <p class="text-gray-400 font-medium text-sm leading-relaxed">We don’t compromise on crowns/prosthesis
+              because that’s what’s visible.</p>
+          </div>
+
+          <!-- Tile 4 -->
+          <div
+            class="p-8 rounded-[2.5rem] border-2 border-gray-50 hover:border-primary/10 hover:shadow-2xl transition-all group reveal">
+            <div
+              class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+              <i data-lucide="heart" class="w-7 h-7"></i>
+            </div>
+            <h4 class="text-xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">Comfort-Focused
+              Dentistry</h4>
+            <p class="text-gray-400 font-medium text-sm leading-relaxed">Gentle approach + calm team + step-by-step
+              explanation.</p>
+          </div>
+
+          <!-- Tile 5 -->
+          <div
+            class="p-8 rounded-[2.5rem] border-2 border-gray-50 hover:border-primary/10 hover:shadow-2xl transition-all group reveal reveal-delay-1">
+            <div
+              class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+              <i data-lucide="shield-check" class="w-7 h-7"></i>
+            </div>
+            <h4 class="text-xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">Sterilisation You
+              Can Trust</h4>
+            <p class="text-gray-400 font-medium text-sm leading-relaxed">Class B autoclave-grade sterilisation standard
+              (vacuum-assisted steam penetration).</p>
+          </div>
+
+          <!-- Tile 6 -->
+          <div
+            class="p-8 rounded-[2.5rem] border-2 border-gray-50 hover:border-primary/10 hover:shadow-2xl transition-all group reveal reveal-delay-2">
+            <div
+              class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+              <i data-lucide="banknote" class="w-7 h-7"></i>
+            </div>
+            <h4 class="text-xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">Transparent Costs +
+              EMI Support</h4>
+            <p class="text-gray-400 font-medium text-sm leading-relaxed">Clear estimate, phased payments, EMI options
+              available.</p>
+          </div>
+
+          <!-- Tile 7 (New) -->
+          <div
+            class="p-8 rounded-[2.5rem] border-2 border-gray-50 hover:border-primary/10 hover:shadow-2xl transition-all group reveal md:col-span-2 lg:col-span-1 xl:col-span-2">
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+              <div
+                class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                <i data-lucide="users-2" class="w-7 h-7"></i>
+              </div>
+              <div class="text-center md:text-left">
+                <h4 class="text-xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">Dedicated Team +
+                  Clean Clinic Discipline</h4>
+                <p class="text-gray-400 font-medium text-sm leading-relaxed">Patient-friendly support, clean setup, and
+                  guidance from consult to follow-ups.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Our Services (Featured Treatments Grid) -->
+    <section class="bg-gray-50 py-24" id="services">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+          <h2 class="text-4xl md:text-5xl font-display font-black text-primary mb-6">Our Featured Treatments</h2>
+          <div class="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-500 font-semibold leading-relaxed">Explore specialist-led dental care designed for
+            comfort, function, and premium aesthetics. Each plan begins with diagnosis, scan-based evaluation, and clear
+            next steps.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1: Dental Implants -->
+          <div
+            class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group reveal">
+            <div class="h-64 overflow-hidden relative">
+              <img src="/dental_implant_treatment_1767682216223.png" alt="Dental Implants"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-black text-primary mb-4 leading-tight">Dental Implants in South Delhi <br><span
+                  class="text-secondary text-sm">(Fixed Teeth Options)</span></h3>
+              <p class="text-gray-500 text-sm mb-6 leading-relaxed font-medium">Dr. Jasneet Singh Kalra’s Dental Clinic
+                is known for precision-driven dental implants in Delhi, offering stable tooth replacement options for
+                single teeth, multiple teeth, and full-arch cases.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Single tooth / multiple teeth
+                  / full arch
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Premium implant systems
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Immediate loading in 24 hours
+                </li>
+              </ul>
+              <a href="#"
+                class="modal-trigger w-full inline-flex items-center justify-center bg-gray-50 text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                Check Implant Eligibility
+              </a>
+              <p class="text-[8px] text-gray-400 mt-4 text-center font-bold italic">Eligibility depends on scan and
+                clinical evaluation.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Full Mouth Rehabilitation -->
+          <div
+            class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group reveal reveal-delay-1">
+            <div class="h-64 overflow-hidden relative">
+              <img src="/full_mouth_rehab_dental_chair.png" alt="Full Mouth Rehab"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-black text-primary mb-4 leading-tight">Full Mouth Rehabilitation <br><span
+                  class="text-secondary text-sm">(Bite + Function + Smile)</span></h3>
+              <p class="text-gray-500 text-sm mb-6 leading-relaxed font-medium">If you have multiple dental
+                concerns missing teeth, worn teeth, repeated dental failures, or chewing discomfort full mouth
+                rehabilitation offers a structured plan.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Structured treatment plan
+                  (phased)
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Function-first bite
+                  correction
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Planned follow-ups & guidance
+                </li>
+              </ul>
+              <a href="#"
+                class="modal-trigger w-full inline-flex items-center justify-center bg-gray-50 text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                Book Bite Evaluation
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Emax Veneers -->
+          <div
+            class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group reveal reveal-delay-2">
+            <div class="h-64 overflow-hidden relative">
+              <img src="/emax_veneers_smile_1767682255531.png" alt="Emax Veneers"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-black text-primary mb-4 leading-tight">Best Smile Design in Delhi <br><span
+                  class="text-secondary text-sm">(Emax Veneers)</span></h3>
+              <p class="text-gray-500 text-sm mb-6 leading-relaxed font-medium">Transform your smile with premium Emax
+                veneers designed for a natural finish. We combine digital planning and aesthetic precision to create
+                smiles that look good in real life.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Treatment in 4–5 days
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Shade selection + smile
+                  planning
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Optional temporary “preview”
+                </li>
+              </ul>
+              <a href="#"
+                class="modal-trigger w-full inline-flex items-center justify-center bg-gray-50 text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                Book Smile Design Consult
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Invisalign Aligners -->
+          <div
+            class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group reveal">
+            <div class="h-64 overflow-hidden relative">
+              <img src="/invisalign_aligners_1767682234584.png" alt="Invisalign"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-black text-primary mb-4 leading-tight">Invisalign Aligners in Delhi <br><span
+                  class="text-secondary text-sm">(Scan-Based Plan)</span></h3>
+              <p class="text-gray-500 text-sm mb-6 leading-relaxed font-medium">Straighten your teeth discreetly with
+                Invisalign. Our scan-based planning helps define treatment time, bite goals, and expected outcomes
+                clearly.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Intra-oral scan + bite
+                  analysis
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Transparent timeline & cost
+                  plan
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Teen/adult plans available
+                </li>
+              </ul>
+              <a href="#"
+                class="modal-trigger w-full inline-flex items-center justify-center bg-gray-50 text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                Schedule Smile Scan
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Root Canal Treatment -->
+          <div
+            class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group reveal reveal-delay-1">
+            <div class="h-64 overflow-hidden relative">
+              <img src="/root_canal_treatment_3d_1767682303590.png" alt="Root Canal"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-black text-primary mb-4 leading-tight">Advanced Root Canal Treatment <br><span
+                  class="text-secondary text-sm">(in Delhi)</span></h3>
+              <p class="text-gray-500 text-sm mb-6 leading-relaxed font-medium">Save your natural tooth with
+                comfort-focused, precise root canal treatment. Our approach focuses on accurate diagnosis, infection
+                removal, and restoring tooth strength.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Single-sitting RCT (selected
+                  cases)
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Digital diagnosis & X-rays as
+                  advised
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Comfort-focused care
+                </li>
+              </ul>
+              <a href="#"
+                class="modal-trigger w-full inline-flex items-center justify-center bg-gray-50 text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                Book RCT Consultation
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6: Gum Treatment -->
+          <div
+            class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group reveal reveal-delay-2">
+            <div class="h-64 overflow-hidden relative">
+              <img src="/gum_health_visualization_1767682319600.png" alt="Gum Treatment"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-black text-primary mb-4 leading-tight">Gum Treatment & Gum Surgery <br><span
+                  class="text-secondary text-sm">(in Delhi)</span></h3>
+              <p class="text-gray-500 text-sm mb-6 leading-relaxed font-medium">Gum treatments address bleeding gums,
+                swelling, infections, and advanced gum disease. For eligible cases, gum procedures may be recommended.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Gum disease evaluation &
+                  diagnosis
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Treatment plan + aftercare
+                  guidance
+                </li>
+                <li class="flex items-center text-xs font-black text-gray-700 uppercase tracking-tighter">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-secondary"></i> Sterile protocols and setup
+                </li>
+              </ul>
+              <a href="#"
+                class="modal-trigger w-full inline-flex items-center justify-center bg-gray-50 text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-sm">
+                Book Gum Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer Banner Section -->
+    <section id="offer" class="py-24 bg-primary relative overflow-hidden">
+      <!-- Background Accent -->
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 -skew-x-12 translate-x-1/2"></div>
+      <div class="container-custom relative z-10">
+        <div class="bg-white/10 backdrop-blur-xl rounded-[3rem] p-12 md:p-20 border border-white/20 shadow-2xl reveal">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div
+                class="inline-flex items-center space-x-2 bg-secondary text-primary px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
+                <i data-lucide="zap" class="w-3 h-3"></i>
+                <span>Limited Slots Available</span>
+              </div>
+              <h2 class="text-4xl md:text-6xl font-display font-black text-white leading-tight mb-6">Teeth Cleaning +
+                <br><span class="text-secondary italic">Whitening Boost</span>
+              </h2>
+              <div class="space-y-4 mb-10">
+                <div class="flex items-center space-x-4 text-white/90 font-black text-lg">
+                  <i data-lucide="check-circle-2" class="w-6 h-6 text-secondary"></i>
+                  <span>Ultrasonic Scaling (Stain Removal)</span>
+                </div>
+                <div class="flex items-center space-x-4 text-white/90 font-black text-lg">
+                  <i data-lucide="check-circle-2" class="w-6 h-6 text-secondary"></i>
+                  <span>Polishing & Finishing</span>
+                </div>
+                <div class="flex items-center space-x-4 text-white/90 font-black text-lg">
+                  <i data-lucide="check-circle-2" class="w-6 h-6 text-secondary"></i>
+                  <span>Complete Oral Consultation</span>
+                </div>
+              </div>
+              <div class="text-[10px] text-white/40 font-bold uppercase tracking-widest mb-2 italic">Location: Jangpura
+                Extension, Delhi</div>
+              <p class="text-[9px] text-white/30 font-bold">Offer valid for first-time online bookings only.</p>
+            </div>
+            <div class="text-center lg:text-right">
+              <div class="inline-block bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl reveal reveal-delay-2">
+                <div class="text-primary/40 font-black text-lg line-through mb-1">Regular ₹1,800</div>
+                <div class="text-6xl md:text-8xl font-display font-black text-primary leading-none mb-4">₹699</div>
+                <div class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-10">Exclusive Online Offer
+                </div>
+                <a href="#" class="modal-trigger"
+                  class="block w-full bg-secondary text-dark py-5 px-10 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-primary hover:text-white transition-all shadow-xl group">
+                  Claim ₹699 Slot <i data-lucide="chevron-right"
+                    class="w-5 h-5 ml-2 inline transition-transform group-hover:translate-x-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process (Steps Adjusted) -->
+    <section class="py-24 bg-white" id="process">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+          <h2 class="text-4xl md:text-5xl font-display font-black text-primary mb-6">World-Class Dental Experience</h2>
+          <div class="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-500 font-semibold leading-relaxed">Systematic, sterile, and specialist-led protocols.</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8 relative">
+          <!-- Connector Line -->
+          <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-100 z-0"></div>
+
+          <!-- Step 1 -->
+          <div class="text-center group reveal relative z-10">
+            <div
+              class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:border-primary group-hover:shadow-2xl transition-all duration-500 shadow-xl">
+              <i data-lucide="calendar-check" class="w-10 h-10 text-primary"></i>
+            </div>
+            <div class="text-[10px] font-black text-secondary tracking-[0.3em] uppercase mb-4">Step 01</div>
+            <h4 class="text-xl font-black text-primary mb-4 p-2">Book Appointment</h4>
+            <p class="text-gray-400 font-medium px-4 text-xs">Call, WhatsApp, or use the form to get a confirmed slot.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="text-center group reveal reveal-delay-1 relative z-10">
+            <div
+              class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:border-primary group-hover:shadow-2xl transition-all duration-500 shadow-xl">
+              <i data-lucide="scan-face" class="w-10 h-10 text-primary"></i>
+            </div>
+            <div class="text-[10px] font-black text-secondary tracking-[0.3em] uppercase mb-4">Step 02</div>
+            <h4 class="text-xl font-black text-primary mb-4 p-2">Diagnosis & Scan</h4>
+            <p class="text-gray-400 font-medium px-4 text-xs">Intra-oral checkup, X-ray (if needed), and discussion.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="text-center group reveal reveal-delay-2 relative z-10">
+            <div
+              class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:border-primary group-hover:shadow-2xl transition-all duration-500 shadow-xl">
+              <i data-lucide="file-check-2" class="w-10 h-10 text-primary"></i>
+            </div>
+            <div class="text-[10px] font-black text-secondary tracking-[0.3em] uppercase mb-4">Step 03</div>
+            <h4 class="text-xl font-black text-primary mb-4 p-2">Transparent Plan</h4>
+            <p class="text-gray-400 font-medium px-4 text-xs">You get a clear treatment cost, timeline, and outcome
+              plan.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="text-center group reveal reveal-delay-3 relative z-10">
+            <div
+              class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:border-primary group-hover:shadow-2xl transition-all duration-500 shadow-xl">
+              <i data-lucide="sparkles" class="w-10 h-10 text-primary"></i>
+            </div>
+            <div class="text-[10px] font-black text-secondary tracking-[0.3em] uppercase mb-4">Step 04</div>
+            <h4 class="text-xl font-black text-primary mb-4 p-2">Treatment & Care</h4>
+            <p class="text-gray-400 font-medium px-4 text-xs">Painless procedure with strict sterilisation and support.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Smiles Transform (Reviews) -->
+    <!-- Success Stories (Testimonials) -->
+    <section class="bg-dark py-24" id="testimonials">
+      <div class="container-custom">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+          <div class="max-w-2xl">
+            <h2 class="text-4xl md:text-5xl font-display font-black text-white mb-6">Success Stories</h2>
+            <div class="w-20 h-1.5 bg-secondary mb-6"></div>
+            <p class="text-white/60 font-semibold uppercase tracking-widest text-[10px]">Real Patient Experiences from
+              Google & Justdial</p>
+          </div>
+          <div class="mt-8 md:mt-0 bg-white/5 border border-white/10 p-6 rounded-3xl flex items-center space-x-6">
+            <div class="text-center">
+              <div class="text-3xl font-black text-white">4.8<span class="text-secondary">/5</span></div>
+              <div class="flex text-secondary text-[8px] justify-center mt-1">
+                <i data-lucide="star" class="w-2 h-2 fill-current"></i>
+                <i data-lucide="star" class="w-2 h-2 fill-current"></i>
+                <i data-lucide="star" class="w-2 h-2 fill-current"></i>
+                <i data-lucide="star" class="w-2 h-2 fill-current"></i>
+                <i data-lucide="star" class="w-2 h-2 fill-current"></i>
+              </div>
+            </div>
+            <div class="h-10 w-px bg-white/10"></div>
+            <div>
+              <div class="text-white font-black text-xs uppercase tracking-tighter">Verified Ratings</div>
+              <div class="text-white/40 text-[10px] font-bold">1,300+ Patient Reviews</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-500 reveal">
+            <div class="flex items-center space-x-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-black text-lg">
+                AS</div>
+              <div>
+                <div class="font-black text-white text-md">Arjun Sharma</div>
+                <div class="flex text-secondary space-x-0.5">
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-white/70 italic text-sm leading-relaxed font-medium">"Exceptional hygiene standards and
+              clinical expertise. Dr. Kashish explained the treatment plan with absolute clarity. The most
+              professional clinic in Jangpura."</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-500 reveal reveal-delay-1">
+            <div class="flex items-center space-x-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 font-black text-lg">
+                PS</div>
+              <div>
+                <div class="font-black text-white text-md">Priyanka Singh</div>
+                <div class="flex text-secondary space-x-0.5">
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-white/70 italic text-sm leading-relaxed font-medium">"Very compassionate care. Dr. Jasneet
+              is incredibly patient and the consultation was very thorough. Excellent results at very affordable
+              prices."</p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-500 reveal reveal-delay-2">
+            <div class="flex items-center space-x-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 font-black text-lg">
+                VM</div>
+              <div>
+                <div class="font-black text-white text-md">Vikram Mehta</div>
+                <div class="flex text-secondary space-x-0.5">
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-white/70 italic text-sm leading-relaxed font-medium">"Highly cooperative staff and a very
+              clean environment. My implant surgery was painless and the follow-up care was brilliant. Five stars for
+              the hospitality!"</p>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div
+            class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-500 reveal">
+            <div class="flex items-center space-x-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400 font-black text-lg">
+                NG</div>
+              <div>
+                <div class="font-black text-white text-md">Neha Gupta</div>
+                <div class="flex text-secondary space-x-0.5">
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-white/70 italic text-sm leading-relaxed font-medium">"The best place for clinical hair and
+              dental treatments. Dr. Kalra identifies the cause of the issue perfectly. Very satisfied with the
+              transition results."</p>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div
+            class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-500 reveal reveal-delay-1">
+            <div class="flex items-center space-x-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-black text-lg">
+                RK</div>
+              <div>
+                <div class="font-black text-white text-md">Rohan Kapoor</div>
+                <div class="flex text-secondary space-x-0.5">
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-white/70 italic text-sm leading-relaxed font-medium">"Got dental implants done recently.
+              The doctor is very skilled and explained everything. Clinic is well-maintained and parking is also easy
+              to find."</p>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div
+            class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-all duration-500 reveal reveal-delay-2">
+            <div class="flex items-center space-x-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 font-black text-lg">
+                AJ</div>
+              <div>
+                <div class="font-black text-white text-md">Amit Jain</div>
+                <div class="flex text-secondary space-x-0.5">
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                  <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-white/70 italic text-sm leading-relaxed font-medium">"Great experience. Very cooperative
+              doctors. They take time to understand the patient's concern and don't rush the procedure. Affordable and
+              best in Delhi."</p>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center reveal">
+          <a href="https://www.google.com/search?q=dr+jasneet+singh+kalra+reviews" target="_blank"
+            class="inline-flex items-center bg-white text-primary px-10 py-4 rounded-full font-black uppercase tracking-widest text-xs hover:bg-secondary hover:text-dark transition-all duration-300 shadow-xl group">
+            View All Google Reviews <i data-lucide="external-link"
+              class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transformation Gallery -->
+    <section class="py-24 bg-white overflow-hidden" id="gallery">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+          <h2 class="text-4xl md:text-5xl font-display font-black text-primary mb-6">Transformation Gallery</h2>
+          <div class="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-500 font-semibold uppercase tracking-widest text-[10px]">Exceptional Clinical Outcomes
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+          <div class="group relative rounded-3xl overflow-hidden shadow-2xl aspect-square">
+            <img src="/emax_veneers_smile_1767682255531.png" alt="Veneers Result"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div
+              class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white font-black uppercase tracking-widest text-xs">Veneers Makeover</span>
+            </div>
+          </div>
+          <div class="group relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:translate-y-12">
+            <img src="/invisalign_aligners_1767682234584.png" alt="Invisalign Result"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div
+              class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white font-black uppercase tracking-widest text-xs">Invisalign® Journey</span>
+            </div>
+          </div>
+          <div class="group relative rounded-3xl overflow-hidden shadow-2xl aspect-square">
+            <img src="/hero_dental_doctor_1767682198961.png" alt="Clinical Precision"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div
+              class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white font-black uppercase tracking-widest text-xs">Specialist Care</span>
+            </div>
+          </div>
+          <div
+            class="group relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:translate-y-12 bg-primary/5 flex flex-col items-center justify-center p-8 border-2 border-dashed border-primary/20 hover:border-primary transition-colors">
+            <div class="text-3xl font-black text-primary mb-2">20k+</div>
+            <div class="text-[10px] font-black text-secondary tracking-widest uppercase text-center">Smiles Delivered
+              Successfully</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs (Clean Accordion) -->
+    <section class="py-24 bg-gray-50" id="faqs">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+          <h2 class="text-4xl md:text-5xl font-display font-black text-primary mb-6">Frequently Asked Questions</h2>
+          <div class="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-500 font-semibold uppercase tracking-widest text-[10px]">Queries & Expert Clarifications
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4" id="faq-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">Is consultation available at the
+                clinic?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">Yes. Visit C-43, Jangpura
+                Extension, Delhi 110014 (Mon–Sat).</p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">Are implants possible in 24
+                hours?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">In select cases, immediate
+                loading may be possible after clinical evaluation and scans.</p>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">How do I know if I need full mouth
+                rehabilitation?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">If you have multiple issues
+                (missing/worn teeth, chewing discomfort, repeated dental failures), you may need a structured plan.</p>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">Are veneers safe for teeth?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">Veneers are planned
+                conservatively; suitability depends on your bite, enamel, and case goals.</p>
+            </div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">Invisalign vs braces which is
+                better?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">Depends on alignment
+                complexity. A scan-based evaluation helps decide.</p>
+            </div>
+          </div>
+          <!-- FAQ 6 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">Do you provide EMI?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">Yes, EMI options may be
+                available for eligible cases.</p>
+            </div>
+          </div>
+          <!-- FAQ 7 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">What is included in the ₹699 Smile
+                Check offer?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">Dental scaling + intra-oral
+                scan/view + consultation. Additional X-rays or treatments (if needed) are charged separately.</p>
+            </div>
+          </div>
+          <!-- FAQ 8 -->
+          <div class="faq-item group reveal">
+            <button
+              class="w-full flex justify-between items-center bg-white p-8 rounded-3xl border-2 border-transparent hover:border-primary/10 transition-all duration-300 shadow-lg faq-trigger">
+              <span class="text-lg font-black text-gray-800 tracking-tight text-left">How can I reach the clinic in
+                Jangpura Extension?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-primary transition-transform duration-300 transform"></i>
+            </button>
+            <div class="hidden bg-white/40 px-8 pb-8 rounded-b-3xl animate-fade-in faq-content">
+              <p class="text-gray-500 font-semibold leading-relaxed pt-2 text-sm italic">Use “Get Directions” on the
+                website or WhatsApp us for the location pin and nearest landmark guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Full Width Google Map -->
+  <section class="w-full h-[450px] relative overflow-hidden mt-24 reveal">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7007.2564551104415!2d77.23729897770998!3d28.58092450000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e05662758f%3A0x8420f4758929f5ec!2sDr.%20Jasneet%20Singh%20Kalra!5e0!3m2!1sen!2sin!4v1767686709415!5m2!1sen!2sin"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Footer (Deep Blue Theme) -->
+  <footer class="bg-primary pt-24 pb-12 overflow-hidden relative border-t-8 border-secondary">
+    <div class="container-custom">
+      <div class="grid lg:grid-cols-12 gap-16 mb-20 reveal">
+        <!-- Clinic Info -->
+        <div class="lg:col-span-4 text-center lg:text-left">
+          <div class="flex flex-col mb-10 items-center lg:items-start">
+            <img src="/clinic_logo.jpg" alt="Dr. Kalra's Clinic"
+              class="h-16 w-auto object-contain mb-4 bg-white p-2 rounded-lg">
+          </div>
+          <p class="text-white/70 font-semibold text-sm leading-relaxed mb-10 italic border-l-4 border-secondary pl-6">
+            "South Delhi’s trusted destination for Specialist-Led Prosthodontics, Implants, and Digital Dentistry.
+            Precision in Planning, Excellence in Results."</p>
+          <div class="flex justify-center lg:justify-start space-x-4">
+            <a href="https://www.facebook.com/DrkalrasDentalClinic/" target="_blank"
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-dark transition-all transition-colors text-white">
+              <i data-lucide="facebook" class="w-6 h-6"></i>
+            </a>
+            <a href="https://www.instagram.com/drjasneetsinghkalra" target="_blank"
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-dark transition-all transition-colors text-white">
+              <i data-lucide="instagram" class="w-6 h-6"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-3 lg:pl-10 text-center lg:text-left">
+          <h4 class="text-secondary font-black mb-10 uppercase tracking-widest text-xs">Clinic Links</h4>
+          <ul class="space-y-4">
+            <li><a href="#home"
+                class="text-white/60 hover:text-white transition-colors text-xs font-black uppercase tracking-widest">Home</a>
+            </li>
+            <li><a href="#about"
+                class="text-white/60 hover:text-white transition-colors text-xs font-black uppercase tracking-widest">About
+                Us</a></li>
+            <li><a href="#why-choose"
+                class="text-white/60 hover:text-white transition-colors text-xs font-black uppercase tracking-widest">Why
+                Choose Us</a></li>
+            <li><a href="#services"
+                class="text-white/60 hover:text-white transition-colors text-xs font-black uppercase tracking-widest">Our
+                Services</a></li>
+            <li><a href="#offer"
+                class="text-white/60 hover:text-white transition-colors text-xs font-black uppercase tracking-widest">Offer</a>
+            </li>
+            <li><a href="#faqs"
+                class="text-white/60 hover:text-white transition-colors text-xs font-black uppercase tracking-widest">FAQs</a>
+            </li>
+            <li><a href="#testimonials"
+                class="text-white/60 hover:text-white transition-colors text-xs font-black uppercase tracking-widest">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="lg:col-span-5 text-center lg:text-left">
+          <h4 class="text-secondary font-black mb-10 uppercase tracking-widest text-xs">Reach Us</h4>
+          <div class="space-y-8">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
+              <div class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5 text-secondary"></i>
+              </div>
+              <a href="https://share.google/lZV4yWX9KJNhizbjH" target="_blank"
+                class="text-white font-bold text-sm leading-relaxed pt-2 hover:text-secondary transition-colors text-center lg:text-left">C-43,
+                Jangpura Extension, <br><span class="text-white/50">(Near Post Office), New Delhi 110014</span></a>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
+              <div class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="phone" class="w-5 h-5 text-secondary"></i>
+              </div>
+              <p class="text-white font-bold text-sm leading-relaxed pt-2 text-center lg:text-left">
+                <a href="tel:+919717155497" class="hover:text-secondary transition-colors">+91 97171 55497</a> <br>
+                <a href="https://wa.me/918432439491"
+                  class="text-white/50 hover:text-green-400 transition-colors flex items-center justify-center lg:justify-start gap-2 mt-1">
+                  <span class="uppercase text-[9px] tracking-widest font-black">WhatsApp:</span> +91 84324 39491
+                </a>
+              </p>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
+              <div class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="clock" class="w-5 h-5 text-secondary"></i>
+              </div>
+              <p class="text-white font-bold text-sm leading-relaxed pt-2">Mon–Sat: 10:30 AM – 7:30 PM <br><span
+                  class="text-white/50">Sunday: Closed (Prior Appointment Only)</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div
+        class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <p
+          class="text-white/30 text-[10px] font-black uppercase tracking-widest leading-relaxed text-center md:text-left">
+          © 2026 Dr. Jasneet Singh Kalra. All Rights Reserved. <br class="md:hidden"> Specialist-Led Dentistry.
+        </p>
+        <div class="flex space-x-8 uppercase tracking-[0.2em] font-black">
+          <a href="/privacy.html" class="text-white/20 hover:text-secondary transition-colors text-[9px]">Privacy
+            Policy</a>
+          <a href="/terms.html" class="text-white/20 hover:text-secondary transition-colors text-[9px]">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div id="appointment-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" role="dialog" aria-modal="true">
+    <!-- Backdrop -->
+    <div class="fixed inset-0 bg-primary/80 backdrop-blur-md transition-opacity" id="modal-backdrop"></div>
+
+    <!-- Modal Content -->
+    <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+      <div class="relative transform transition-all sm:my-8 sm:w-full sm:max-w-xl reveal">
+        <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 p-8 md:p-12 text-left">
+          <!-- Close Button -->
+          <button id="close-modal" class="absolute top-6 right-6 text-gray-400 hover:text-primary transition-colors">
+            <i data-lucide="x" class="w-8 h-8"></i>
+          </button>
+
+          <div class="mb-10">
+            <h3 class="text-3xl font-display font-black text-primary mb-2">Book Your Visit</h3>
+            <p class="text-gray-500 font-medium">Share your details our coordinator will confirm your slot.</p>
+          </div>
+
+          <form id="modal-booking-form" class="space-y-4">
+            <div class="space-y-1">
+              <label class="text-[10px] font-black text-primary uppercase tracking-widest ml-1">Full Name*</label>
+              <input type="text" name="name" required placeholder="Enter your full name"
+                class="w-full bg-gray-50 border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary text-sm font-semibold">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="space-y-1">
+                <label class="text-[10px] font-black text-primary uppercase tracking-widest ml-1">Phone Number*</label>
+                <input type="tel" name="phone" required placeholder="Enter mobile number"
+                  class="w-full bg-gray-50 border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary text-sm font-semibold">
+              </div>
+              <div class="space-y-1">
+                <label class="text-[10px] font-black text-primary uppercase tracking-widest ml-1">Area / PIN
+                  Code</label>
+                <input type="text" name="area_pin" placeholder="e.g. Jangpura / 110014"
+                  class="w-full bg-gray-50 border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary text-sm font-semibold">
+              </div>
+            </div>
+
+            <div class="space-y-1">
+              <label class="text-[10px] font-black text-primary uppercase tracking-widest ml-1">Email Address*</label>
+              <input type="email" name="email" required placeholder="Enter your email"
+                class="w-full bg-gray-50 border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary text-sm font-semibold">
+            </div>
+
+            <div class="space-y-1">
+              <label class="text-[10px] font-black text-primary uppercase tracking-widest ml-1">Service Needed*</label>
+              <select name="service" required
+                class="w-full bg-gray-50 border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary text-sm font-semibold appearance-none">
+                <option value="" disabled selected>Select Service</option>
+                <option value="Dental Implants">Dental Implants</option>
+                <option value="Invisalign">Invisalign Aligners</option>
+                <option value="Smile Makeover">Smile Makeover (Veneers)</option>
+                <option value="Root Canal">Root Canal Treatment</option>
+                <option value="Checkup">Consultation / Checkup</option>
+                <option value="Cleaning">Teeth Cleaning Offer</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="flex items-start space-x-2 pt-2">
+              <input type="checkbox" required id="modal-consent" name="consent"
+                class="mt-1 w-4 h-4 text-secondary rounded focus:ring-secondary">
+              <label for="modal-consent" class="text-[10px] text-gray-400 leading-tight">By submitting, you agree to
+                receive a call/WhatsApp regarding appointment confirmation.</label>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit"
+                class="w-full bg-secondary text-dark py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-primary hover:text-white transition-all shadow-xl flex items-center justify-center group">
+                <span>Confirm Request</span>
+                <i data-lucide="arrow-right" class="w-5 h-5 ml-3 transition-transform group-hover:translate-x-1"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Success Message (Hidden by default) -->
+          <div id="modal-success" class="hidden text-center py-10 space-y-6 animate-fade-in">
+            <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto text-green-500">
+              <i data-lucide="check-circle-2" class="w-12 h-12"></i>
+            </div>
+            <div>
+              <h4 class="text-2xl font-black text-primary mb-2">Request Received!</h4>
+              <p class="text-gray-500 font-medium">Our coordinator will call you shortly to confirm your clinical slot.
+              </p>
+            </div>
+            <button id="close-modal-success"
+              class="inline-flex items-center text-primary font-black uppercase tracking-widest text-xs hover:text-secondary transition-colors underline underline-offset-8">Back
+              to Home</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Footer CTA -->
+  <div
+    class="md:hidden fixed bottom-0 left-0 w-full z-50 grid grid-cols-2 gap-px bg-white/10 backdrop-blur-lg border-t border-white/10">
+    <a href="tel:+919717155497"
+      class="bg-primary/95 text-white py-4 flex items-center justify-center font-bold space-x-2 active:bg-primary">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/918432439491"
+      class="bg-green-600/95 text-white py-4 flex items-center justify-center font-bold space-x-2 active:bg-green-600">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
