@@ -116,12 +116,12 @@ const setupFormHandler = (formId, successId) => {
     submitBtn.innerHTML = '<span>Processing...</span>';
     submitBtn.disabled = true;
 
-    const serviceID = 'YOUR_SERVICE_ID';
-    const templateID = 'YOUR_TEMPLATE_ID';
+    const serviceID = 'service_xj5qrcr';
+    const templateID = 'template_0ebc8jd';
 
     emailjs.sendForm(serviceID, templateID, form)
       .then(() => {
-        if (formId === 'hero-form') {
+        if (formId === 'consultation-form') {
           success.classList.remove('hidden');
           form.reset();
         } else {
@@ -141,7 +141,7 @@ const setupFormHandler = (formId, successId) => {
 };
 
 // Initialize handlers for both forms
-setupFormHandler('hero-form', 'form-success');
+setupFormHandler('consultation-form', 'form-success');
 setupFormHandler('modal-booking-form', 'modal-success');
 
 // --- Appointment Modal Logic ---
